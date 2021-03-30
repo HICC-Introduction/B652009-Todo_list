@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <title>To-Do list</title>
+</head>
+<body>
+<h1>TO-DO</h1>
+    <!-- select priority and category-->
+    <select name = "priority" id="priority-select">
+        <option value="none" selected>Priority</option>
+        <option value="high">High</option>
+        <option value="medium">Medium</option>
+        <option value="low">Low</option>
+    </select>
+    <select name = "category" id="category-select">
+        <option value="none" selected>Category</option>
+        <option value="programming">Programming</option>
+        <option value="design">Design</option>
+        <option value="daily">Daily</option>
+    </select>
+    <!-- edit and delete button -->
+   <button class="edit-btn">
+       Edit
+   </button>
+   <button class="del-btn">
+       Delete
+    </button><br>
+    <!-- to-do list input, add to-do button -->
+    <input type="text" id="todo-input" name="todo-input">
+    <div class="add-btn"><i class="fas fa-plus-circle"></i></div><br>
+    <!-- tab menu link-->
+    <div class="tab">
+        <button class="tablinks" onclick="openPriority(event, 'high')">High</button>
+        <button class="tablinks" onclick="openPriority(event, 'medium')">Medium</button>
+        <button class="tablinks" onclick="openPriority(event, 'low')">Low</button>
+    </div>
+    <!-- tab content-->
+    
+</body>
+</html>
