@@ -1,0 +1,191 @@
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+}
+
+h1 {
+  position: absolute;
+  width: 84px;
+  height: 36px;
+  left: 165px;
+  top: 53px;
+
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+  /* identical to box height */
+
+  color: #333333;
+}
+
+/*각 컴포넌트의 figma inspector css*/
+
+.priority {
+  font-weight: 700;
+  font-size: 10px;
+  border: none;
+  position: absolute;
+  width: 80px;
+  height: 42px;
+  left: 0px;
+  top: 129px;
+  padding-left: 16px;
+}
+.category {
+  font-weight: 700;
+  font-size: 10px;
+  border: none;
+  position: absolute;
+  width: 80px;
+  height: 42px;
+  left: 81px;
+  top: 129px;
+  padding-left: 4px;
+}
+/*Edit Delete 각각의 버튼 크기를 폰트 사이즈와 다르게 지정하기 위해 "del-icon" 클래스를 새로 지정하였음..*/
+.edit-btn {
+  font-weight: 700;
+  font-size: 10px;
+  background: none;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  align-items: right;
+  padding-right: 16px;
+
+  position: absolute;
+  width: 80px;
+  height: 16px;
+  left: 284px;
+  top: 144px;
+}
+.del-btn {
+  font-weight: 700;
+  font-size: 10px;
+  background: none;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  align-items: right;
+  padding-right: 16px;
+
+  position: absolute;
+  width: 80px;
+  height: 15px;
+  left: 345px;
+  top: 144px;
+}
+.edit-icon {
+  font-size: 16px;
+  line-height: 16px;
+  padding-right: 4px;
+}
+.del-icon {
+  font-size: 16px;
+  line-height: 16px;
+  padding-right: 2px;
+}
+
+/*To-do 입력을 안내하는 화면. Placeholder만의 색을 어떻게 변경시킬까?*/
+.todo-input {
+  font-weight: 700;
+  font-size: 16px;
+  position: absolute;
+  width: 100%;
+  height: 42px;
+  left: 0px;
+  top: 179px;
+
+  background: #ffffff;
+  border: 1px solid #f2f2f2;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 16px -2px rgba(53, 55, 60, 0.1);
+}
+
+.add-btn {
+  border: none;
+  background: none;
+  font-size: 20px;
+  color: #aeaeb8;
+  line-height: 5px;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: 374px;
+  top: 188px;
+}
+
+/*아래는 탭 버튼. JS를 사용해 Onclick시 opacity 설정이 들어가게 한다.*/
+.tab-high {
+  font-weight: 700;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+
+  position: absolute;
+  width: 73px;
+  height: 29px;
+  left: 11px;
+  top: 280px;
+
+  background: #ffffff;
+  border: 1px solid #f2f2f2;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 16px -4px rgba(53, 55, 60, 0.15);
+  border-radius: 24px;
+}
+
+.tab-medium {
+  font-weight: 700;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+
+  position: absolute;
+  width: 95px;
+  height: 29px;
+  left: 92px;
+  top: 280px;
+
+  background: #ffffff;
+  border: 1px solid #f2f2f2;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 16px -4px rgba(53, 55, 60, 0.1);
+  border-radius: 24px;
+}
+
+.tab-low {
+  font-weight: 700;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+
+  position: absolute;
+  width: 68px;
+  height: 29px;
+  left: 195px;
+  top: 280px;
+
+  background: #ffffff;
+  border: 1px solid #f2f2f2;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 16px -4px rgba(53, 55, 60, 0.1);
+  border-radius: 24px;
+}
