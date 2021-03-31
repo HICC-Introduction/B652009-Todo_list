@@ -59,7 +59,7 @@ h1 {
   display: flex;
   flex-direction: row;
   align-items: right;
-  padding-right: 16px;
+  margin-left: auto;
 
   position: absolute;
   width: 80px;
@@ -75,7 +75,7 @@ h1 {
   display: flex;
   flex-direction: row;
   align-items: right;
-  padding-right: 16px;
+  margin-left: auto;
 
   position: absolute;
   width: 80px;
@@ -96,10 +96,11 @@ h1 {
 
 /*To-do 입력을 안내하는 화면. Placeholder만의 색을 어떻게 변경시킬까?*/
 .todo-input {
-  font-weight: 700;
-  font-size: 16px;
+  font-weight: 500px;
+  font-size: 14px;
   position: absolute;
-  width: 100%;
+  min-width: 100%;
+  max-width: 1040px;
   height: 42px;
   left: 0px;
   top: 179px;
@@ -121,6 +122,18 @@ h1 {
   height: 24px;
   left: 374px;
   top: 188px;
+}
+
+form input::placeholder {
+  color: #aeaeb8;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 0px 0px 0px 16px;
+}
+/* Button inactive & active status 구분..*/
+form button {
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 /*아래는 탭 버튼. JS를 사용해 Onclick시 opacity 설정이 들어가게 한다.*/
