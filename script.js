@@ -21,7 +21,7 @@ function addTodo(event){
     //create Checkmark button
     const doneBtn = document.createElement('input');
     doneBtn.classList.add('done_chk');
-    doneBtn.type ="button";
+    doneBtn.type ="checkbox";
     doneBtn.value="Check";
     doneBtn.addEventListener("click",function(lineCheck){});
     todoDiv.appendChild(doneBtn);
