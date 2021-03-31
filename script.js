@@ -6,20 +6,26 @@ const todoList=document.querySelector('.todo-list'); //변수 todoList는 addBut
 //EventListners
 addButton.addEventListener('click',addTodo);
 
+function lineCheck(){
+    var chk = document.getElementsByClassName('todo-item');
+    chk.classList.add("done");
+    console.log('click');
+}
+
 //Functions
 function addTodo(event){
     event.preventDefault(); //prevent refresh
-    console.log('hello');
-    
     //create todo <div> with class"todo" under <ul> todo-list
     const todoDiv = document.createElement('div');
     todoDiv.classList.add('todo');
     //create Checkmark button
     const doneBtn = document.createElement('input');
     doneBtn.classList.add('done_chk');
-    doneBtn.type ="button"
-    doneBtn.value="Check"
+    doneBtn.type ="button";
+    doneBtn.value="Check";
+    doneBtn.addEventListener("click",function(lineCheck){});
     todoDiv.appendChild(doneBtn);
+ 
     //create <li> with class "todo-item" under <div> todo
     const newTodo = document.createElement('li');
     newTodo.innerText='input text';
@@ -34,3 +40,15 @@ function addTodo(event){
     //append to list
     todoList.appendChild(todoDiv);
 }
+
+
+
+newFunction();
+
+function newFunction() {
+        window.onload(function () {
+            var itemStyle = localStorage.getItem('done_chk');
+            var as = document.getElementById("done_chk");
+            as.classList.add(itemStyle);
+        });
+    }
