@@ -107,15 +107,15 @@ h1 {
   padding-right: 2px;
 }
 
+.clicked {
+}
 
 /*To-do 입력을 안내하는 화면. Placeholder만의 색을 어떻게 변경시킬까?*/
-
 
 form {
   display: flex;
   justify-content: space-between;
 }
-
 
 .todo-input {
   font-weight: 500px;
@@ -131,7 +131,6 @@ form {
 }
 
 .add-btn {
-  hover;
   border: none;
   background: none;
   font-size: 20px;
@@ -143,7 +142,13 @@ form {
   top: 188px;
 }
 
-form{
+#todo-text {
+  font-size: 14px;
+  font-weight: 400;
+  padding: 16px;
+}
+
+form {
   display: inline-block;
 }
 
@@ -151,7 +156,6 @@ form input::placeholder {
   color: #aeaeb8;
   font-weight: 600;
   font-size: 16px;
-  padding: 0px 0px 0px 16px;
 }
 /* Button inactive & active status 구분..*/
 form button {
@@ -160,14 +164,13 @@ form button {
 }
 
 /*아래는 탭 버튼. JS를 사용해 Onclick시 opacity 설정이 들어가게 한다.*/
-.tab{
+.tab {
   display: flex;
   flex-direction: row;
   justify-content: left;
   align-items: flex-start;
   padding: 64px 0px 16px 16px;
 }
-
 
 .tab-high {
   font-weight: 700;
@@ -176,7 +179,7 @@ form button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin : 4px;
+  margin: 4px;
 
   width: 73px;
   height: 29px;
@@ -197,7 +200,7 @@ form button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin : 4px;
+  margin: 4px;
 
   width: 95px;
   height: 29px;
@@ -218,7 +221,7 @@ form button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin : 4px;
+  margin: 4px;
 
   width: 68px;
   height: 29px;
@@ -232,43 +235,79 @@ form button {
   border-radius: 24px;
 }
 
-
 /*todo list css*/
 
 .todo {
   display: flex;
-  justify-content: flex-start;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
   text-align: center;
   list-style-type: none;
   padding: 16px;
-  margin:4px;
-  
+  margin: 4px 0 0 0;
+
   width: 100%;
   height: 64px;
   left: 0px;
   top: 0px;
 
   color: #888888;
-  background: #FFFFFF;
-  border: 1px solid #F2F2F2;
+  background: #ffffff;
+  border: 1px solid #f2f2f2;
   box-sizing: border-box;
   box-shadow: 0px 4px 16px -2px rgba(53, 55, 60, 0.1);
 }
 
+.chk-contents {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+}
 
-
-.done {
+/*when checkbox value is "check", make line-through */
+input.done-chk:checked {
   text-decoration: line-through;
 }
 
-.todo-item{
+.todo-item {
   margin: 10px;
 }
 
-.category-item{
-  margin: 8px;
+.category-item {
+  display: block;
+  justify-content: flex-end;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 700;
+
   background: white;
-  border-radius: 2px;
-  border:paleturquoise;
+  border-radius: 24px;
+  border: paleturquoise 2px solid;
+  padding: 4px 10px 4px 10px;
+}
+
+.code-todo {
+  color: #8674f2;
+  background: #c6bdff;
+  border: 1px solid #a799ff;
+  box-sizing: border-box;
+  border-radius: 24px;
+}
+
+.design-todo {
+  color: #ff6f6f;
+  background: #ffd3d3;
+  border: 1px solid #ffa2a2;
+  box-sizing: border-box;
+  border-radius: 24px;
+}
+
+.daily-todo {
+  color: #1ac975;
+  background: #acf5d2;
+  border: 1px solid #1be785;
+  box-sizing: border-box;
+  border-radius: 24px;
 }

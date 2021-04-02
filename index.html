@@ -23,23 +23,23 @@
         <div class="selects">
             <select name="priority" id="priority-select" class="priority">
                 <option value="1" selected>Priority</option>
-                <option value="2">High</option>
-                <option value="3">Medium</option>
-                <option value="4">Low</option>
+                <option value="2">&#x1F691;High</option>
+                <option value="3">&#x1F695;Medium</option>
+                <option value="4">&#x1F6B2;Low</option>
             </select>
             <select name="category" id="category-select" class="category">
-                <option value="1" selected>Category</option>
-                <option value="2">Programming</option>
-                <option value="3">Design</option>
-                <option value="4">Daily</option>
+                <option value="none" selected>Category</option>
+                <option value="Programming">Programming</option>
+                <option value="Design">Design</option>
+                <option value="Daily">Daily</option>
             </select>
         </div>
         <div class="buttons">
             <!-- edit and delete button -->
-            <button onclick="" class="edit-btn">
+            <button onclick="changeMode()" id="edit-btn" class="edit-btn" value="not-done">
                 <div class="edit-icon">&#x270F;</div>Edit
             </button>
-            <button onclick="" class="del-btn">
+            <button onclick="changeMode()" id="del-btn" class="del-btn"  value="not-done">
                 <div class="del-icon">&#x1F5D1;</div>Delete
             </button><br>
         </div>
@@ -47,7 +47,7 @@
 
     <!-- to-do list input, add to-do button -->
     <form>
-        <input type="text" class="todo-input" name="todo-input" placeholder="Enter your To-do..">
+        <input type="text" id ="todo-text" class="todo-input" name="todo-input" placeholder="Enter your To-do..">
         <button class="add-btn" type="submit">
             <i class="fas fa-plus-circle"></i>
         </button>
