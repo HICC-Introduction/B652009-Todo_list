@@ -7,18 +7,9 @@ const editMode=document.getElementById('edit-btn');
 const getCategory=document.getElementById('category-select');
 //EventListners
 addButton.addEventListener('click',addTodo);
-//addButton.addEventListener('click',getCategory);
-
-
-function lineCheck(){
-    var chk = document.getElementsByClassName('todo-item');
-    chk.classList.add("done");
-    li.appendChild(chk);
-}
-
-// Edit mode and Delete mode shoulb in front of addTodo function
-
-
+editMode.addEventListener('click',()=>{
+    editMode.classList.toggle('done');
+});
 
 
 // Change button text when user clicks button.
@@ -38,20 +29,20 @@ function addTodo(event){
     doneBtn.classList.add('done-chk');
     doneBtn.type ="checkbox";
     doneBtn.value="Check";
-    doneBtn.addEventListener("click",function(lineCheck){});
  
     //create <li> with class "todo-item" under <div> todo
     const newTodo = document.createElement('li');
     newTodo.innerText=todoInput.value;
     newTodo.classList.add('todo-item');
     
-    //create <filter>
+    //create <filter> 조건문
     const categoryLabel = document.createElement('span');  //html에서 category-select option으로 받은 값 가져와야 함
     categoryLabel.classList.add('category-item');
     categoryLabel.innerText = getCategory.value;
         if(getCategory.value === 'none')
         {
             alert('Please choose category.');
+            return;
         }
         if(getCategory.value === 'Programming')
         {
@@ -66,6 +57,21 @@ function addTodo(event){
            categoryLabel.classList.add('daily-todo')
         }
 
+    const prioritySel = document.getElementById("priority-select");
+        if(prioritySel.value === '1')
+        {
+            alert('Please choose task priority.');
+            return;
+        }
+        /* Tab ! prioritySel.value = this.value
+        switch(this.value)
+        case 1:
+            alert
+            return;
+        case 2: 
+            tab에 맞게 append 차일드 하고, 이외의 탭은 hidden state
+            */
+
     //append todo checkbox and input to list
     const contents = document.createElement('div');
     contents.classList.add('chk-contents')
@@ -78,15 +84,17 @@ function addTodo(event){
     labels.classList.add('labels');
     todoDiv.appendChild(labels);
     labels.appendChild(categoryLabel);
-
     todoList.appendChild(todoDiv);
     //Clear input area
     todoInput.value ="";
 }
 
-
-//label color
-
-
-
-//button click -> checked 상태로 변화 
+// Edit mode and Delete mode. input.donechk {appearance:none;}으로 만들거나 removeChild(doneBtn)를 사용해 checkbox를 리스트에서 지워준다. 대신 그 자리에 edit acitvation icon을 넣어준다. 
+let clicked = true;
+function toggleText(){
+    if(clicked){
+        editMode.textContent="Done";
+    }else{
+        editMode.textContent=delMode.innerHTML;
+    }
+}
