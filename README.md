@@ -1,8 +1,14 @@
-//2021-03-25 시작, To-do list project
+**Project description**
+----
+Html과 Css, JavaScript를 이용하여 간단한 Todo-list 웹앱을 제작한다.
 
-- 간단한 Edit Button, Label 등 어떤 기능을 써야하는지 찾아내기
-- 개발 용어 이해하기... ! 구글링도 그렇지만 협업에서도 가장 중요할 것
 
-//2021-03-29 
+**사용한 기술**
+---
+Html, Css, JavaScript
 
-- html 잘 짜놓고 날렸다
+
+**결과 이미지**
+---
+![image](https://user-images.githubusercontent.com/51940808/113503612-f20f6080-956d-11eb-9e36-e5ec7cf839b1.png)
+
