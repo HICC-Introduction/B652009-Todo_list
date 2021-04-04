@@ -20,4 +20,6 @@ Html, Css, JavaScript
 
 실행 방법
 ---
-git branch -t 
+1. 파일을 실행할 디렉토리에 접속해 코드를 clone 한다. git code -> https://github.com/HICC-Introduction/B652009-Todo_list.git 
+2. 클론한 디렉토리에 접속해, git branch를 확인한다.
+3. 원격 저장소인 develop 브랜치를 추가해 checkout하고 다시 git pull 
