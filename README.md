@@ -1,8 +1,8 @@
 Project description
 ----
 Html과 Css, JavaScript를 이용하여 간단한 Todo-list 웹앱을 제작한다.<br>
-알고있는 선에서 제작하였기 때문에 따로 Todo list 저장은 되지 않는다..<br>
-또한, To-do 추가/제거 기능은 아직 구현하지 못했다.<br>
+따로 Todo list 저장은 되지 않는다..<br>
+또한 To-do 추가/제거 기능은 아직 구현하지 못했다.<br>
 
 [화면설계서](https://github.com/HICC-Introduction/B652009-Todo_list/issues/4#issue-842737681)<br>
 [기능명세서](https://github.com/HICC-Introduction/B652009-Todo_list/issues/3#issue-842730389)
@@ -21,7 +21,7 @@ Html, Css, JavaScript
 
 실행 방법
 ---
-1. 파일을 실행할 디렉토리에 접속해 코드를 clone 한다. git code -> https://github.com/HICC-Introduction/B652009-Todo_list.git 
-2. 클론한 디렉토리에 접속해, 원격 저장소인 develop 브랜치에 접근해야 하므로 git remote update 후 현재 브랜치를 확인한다.
-3. git checkout -t origin/develop 명령어로 원격저장소의 develop 브랜치에 접근하면, 해당 디렉토리에 html과 css, js파일이 생성된다.
-4. html파일을 크롬 브라우저로 실행한다.
+##항목 추가하기
+1. Priority와 Category 옵션을 선택한다.
+2. 생성할 To-do 일정의 내용을 "Enter your To-do"영역에 입력한다.
+3. 우측의 '+'모양 추가 버튼을 클릭한다.
