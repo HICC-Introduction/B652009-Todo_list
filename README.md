@@ -13,7 +13,8 @@ Html, Css, JavaScript
 결과 이미지
 ---
 메인페이지 - PC size<br>
-![PC](https://user-images.githubusercontent.com/51940808/113503965-153b0f80-9570-11eb-8c64-6fc5ff46c612.png)
+![Group 22](https://user-images.githubusercontent.com/51940808/113503972-27b54900-9570-11eb-9914-25aaa2dc14c1.png)
+
 <br>
 메인페이지 - Mobile size<br>
 ![image](https://user-images.githubusercontent.com/51940808/113503692-5fbb8c80-956e-11eb-9159-56188410bd18.png)
