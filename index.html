@@ -36,17 +36,17 @@
         </div>
         <div class="buttons">
             <!-- edit and delete button -->
-            <button type="button" onclick="toggleText()" id="edit-btn" class="edit-btn" value="not-done">
+            <button type="button" id="edit-btn" class="edit-btn">
                 <div class="edit-icon">&#x270F;</div>Edit
             </button>
-            <button type="button" onclick="toggleText()" id="del-btn" class="del-btn"  value="not-done">
+            <button type="button" id="del-btn" class="del-btn">
                 <div class="del-icon">&#x1F5D1;</div>Delete
             </button><br>
         </div>
     </div>
 
     <!-- to-do list input, add to-do button -->
-    <form>
+    <form class="input-area">
         <input type="text" id ="todo-text" class="todo-input" name="todo-input" placeholder="Enter your To-do..">
         <button class="add-btn" type="submit">
             <i class="fas fa-plus-circle"></i>

@@ -7,9 +7,9 @@ const editMode=document.getElementById('edit-btn');
 const getCategory=document.getElementById('category-select');
 //EventListners
 addButton.addEventListener('click',addTodo);
-editMode.addEventListener('click',()=>{
-    editMode.classList.toggle('done');
-});
+editMode.addEventListener('click',toggleEdit);
+
+delMode.addEventListener('click',toggleDel);
 
 
 // Change button text when user clicks button.
@@ -90,11 +90,17 @@ function addTodo(event){
 }
 
 // Edit mode and Delete mode. input.donechk {appearance:none;}으로 만들거나 removeChild(doneBtn)를 사용해 checkbox를 리스트에서 지워준다. 대신 그 자리에 edit acitvation icon을 넣어준다. 
-let clicked = true;
-function toggleText(){
-    if(clicked){
-        editMode.textContent="Done";
-    }else{
-        editMode.textContent=delMode.innerHTML;
-    }
+
+function toggleEdit(){
+    editMode.classList.toggle('done');
+    editMode.value = "done";
+    editMode.addEventListener('click',()=>{  // edit mode를 껐다 키는 법을 잘 모르겠다.
+        editMode.removeAttribute("done");
+        editMode.value="edit";
+    })
+}
+
+function toggleDel(){
+    delMode.classList.toggle('done');
+    delMode.textContent="Done";
 }
