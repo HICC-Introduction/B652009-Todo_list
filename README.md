@@ -16,7 +16,7 @@ Html, Css, JavaScript
 ![Group 22](https://user-images.githubusercontent.com/51940808/113503972-27b54900-9570-11eb-9914-25aaa2dc14c1.png)
 
 <br>
-메인페이지 - Mobile size<br>
+메인페이지 - Mobile size
 ![Group 24](https://user-images.githubusercontent.com/51940808/113504009-63501300-9570-11eb-985b-74ac4badc932.png)
 
 
