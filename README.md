@@ -1,7 +1,8 @@
 Project description
 ----
 Html과 Css, JavaScript를 이용하여 간단한 Todo-list 웹앱을 제작한다.
-ss, JavaScript를 이용하여 간단한 Todo-list 웹앱을 제작한다.
+알고있는 선에서 제작하였기 때문에 따로 Todo list 저장은 되지 않는다..
+또한, To-do 추가/제거 기능은 아직 구현하지 못했다.
 
 [화면설계서](https://github.com/HICC-Introduction/B652009-Todo_list/issues/4#issue-842737681)<br>
 [기능명세서](https://github.com/HICC-Introduction/B652009-Todo_list/issues/3#issue-842730389)
