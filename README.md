@@ -17,7 +17,8 @@ Html, Css, JavaScript
 
 <br>
 메인페이지 - Mobile size<br>
-![image](https://user-images.githubusercontent.com/51940808/113503692-5fbb8c80-956e-11eb-9159-56188410bd18.png)
+![Group 24](https://user-images.githubusercontent.com/51940808/113504009-63501300-9570-11eb-985b-74ac4badc932.png)
+
 
 실행 방법
 ---
